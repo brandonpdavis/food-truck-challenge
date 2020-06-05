@@ -1,24 +1,22 @@
 {
   "name": "food-truck-challenge",
   "version": "1.0.0",
-  "description": "Web application that allows you to search for nearest food trucks",
+  "description": "Food Truck Challenge",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src --ext .js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brockmdavis/food-truck-challenge.git"
   },
   "author": "Brock Davis",
   "license": "ISC",
-  "devDependencies": {
-    "eslint": "5.9.0",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.3.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "pre-commit": "1.2.2",
-    "prettier": "^2.0.5",
-    "prettyjson": "^1.2.1"
+  "bugs": {
+    "url": "https://github.com/brockmdavis/food-truck-challenge/issues"
   },
-  "pre-commit": [
-    "lint"
-  ]
+  "homepage": "https://github.com/brockmdavis/food-truck-challenge#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
