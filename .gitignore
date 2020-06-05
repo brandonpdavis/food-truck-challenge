@@ -18,3 +18,9 @@ npm-debug.log*
 
 # Optional npm cache directory
 .npm
+
+
+# Project specific
+coverage/
+react-app/dist/
+.env
