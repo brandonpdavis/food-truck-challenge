@@ -5,10 +5,11 @@ import { getFoodTrucks } from '@brockmdavis/sfft-sdk';
 const SearchParams = () => {
   const [long, setLong] = useState('-122.39');
   const [lat, setLat] = useState('37.79');
+  const [keyword, setKeyword] = useState('');
   const [foodTrucks, setFoodTrucks] = useState([]);
 
   async function requestFoodTrucks() {
-    const { data } = await getFoodTrucks(long, lat, '');
+    const { data } = await getFoodTrucks(long, lat, keyword, '');
     setFoodTrucks(data || []);
   }
 
@@ -20,6 +21,10 @@ const SearchParams = () => {
           requestFoodTrucks();
         }}
       >
+        <label htmlFor="keyword">
+          Keyword
+          <input id="keyword" value={keyword} placeholder="e.g. tacos" onChange={(e) => setKeyword(e.target.value)} />
+        </label>
         <label htmlFor="longitude">
           Longitude
           <input id="longitude" value={long} placeholder="Longitude" onChange={(e) => setLong(e.target.value)} />

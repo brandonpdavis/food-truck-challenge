@@ -1,6 +1,6 @@
 # Food Truck - San Francisco Edition
 
-Do you love food trucks? Do you live in San Francisco? PERFECT! This app (and SDK) allow you to search by longitude and latitude and returns all food trucks with an approved permmit within a mile walking distance (technically 1600 meters, which is few meters shy of a mile but your FitBit won't know the difference). You can find a demo of the app at <http://brockneedscoffee.com.s3-website-us-east-1.amazonaws.com/>
+Do you love food trucks? Do you live in San Francisco? PERFECT! This app (and SDK) allow you to search by longitude, latitude, and keyword and returns all food trucks with an approved permmit within a mile walking distance (technically 1600 meters, which is few meters shy of a mile but your FitBit won't know the difference). You can find a demo of the app at <http://brockneedscoffee.com.s3-website-us-east-1.amazonaws.com/>
 
 ## Getting Started
 
