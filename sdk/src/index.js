@@ -9,7 +9,7 @@ const BASE = 'https://data.sfgov.org/resource/rqzj-sfat.json';
 async function getFoodTrucks(long, lat, token) {
   try {
     const response = await axios.get(
-      `${BASE}?status=APPROVED&$where=within_circle(location,${lat},${long},1600)&$limit=5&$order=longitude%20DESC`,
+      `${BASE}?status=APPROVED&$where=within_circle(location,${lat},${long},1600)&$order=longitude%20DESC`,
       { dataType: 'json', data: { $$apptoken: token } }
     );
     return response;
