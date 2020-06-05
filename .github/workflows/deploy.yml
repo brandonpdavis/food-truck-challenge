@@ -14,7 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install packages
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://npm.pkg.github.com/
+          scope: '@brockmdavis'
+          token: '${{secrets.CI_CD_PAT}}'
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.CI_CD_PAT}}
       - name: Generate Build
         run: npm run build
       - uses: brockmdavis/brockmdavis-s3-sync@master
