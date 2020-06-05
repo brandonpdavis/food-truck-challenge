@@ -5,7 +5,6 @@ import { getFoodTrucks } from '@brockmdavis/sfft-sdk';
 const SearchParams = () => {
   const [long, setLong] = useState('-122.39');
   const [lat, setLat] = useState('37.79');
-  const [pets, setPets] = useState([]);
   const [foodTrucks, setFoodTrucks] = useState([]);
 
   async function requestFoodTrucks() {
