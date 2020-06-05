@@ -1,0 +1,7 @@
+/node_modules/**
+/src/**/node_modules/**
+/templates/**/node_modules/**
+!.eslintrc.json
+.npmrc
+/dist
+/build
