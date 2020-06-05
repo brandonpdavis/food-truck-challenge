@@ -1,6 +1,6 @@
 {
   "name": "@brockmdavis/sfft-sdk",
-  "version": "0.0.8-beta",
+  "version": "1.0.0",
   "description": "This is a lightweight client that returns food trucks within a mile of the long/lat coordinates passed",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
