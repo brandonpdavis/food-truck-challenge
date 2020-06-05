@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 on:
   pull_request:
     branches:
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
-          scope: '@turnercode'
+          scope: '@brockmdavis'
           token: '${{secrets.CI_CD_PAT}}'
       - name: Install packages
         run: npm ci
